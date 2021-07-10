@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+
+}
+ul{
+    margin: 0;
+    padding-left: 0;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+h1, h2, p{
+    margin: 0;
+}
+button{
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+header #nav-header{
+    background:blueviolet;
+}
+header #nav-header ul{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50px;
+}
+header #nav-header ul li{
+    margin-right: 20px;
+}
+/*BANNER*/
+header #banner{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-pintura-acuarela-rosa-vibrante_53876-58930.jpg?size=626&ext=jpg);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header #banner div
+{
+    text-align: center;
+}
+header #banner div h1
+{
+    margin-bottom: 10px;
+}
+/*Secciones botones*/
+#transitions{
+    background: rgb(175, 121, 226);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#transitions h2, #cards h2{
+    margin-bottom: 10px;
+}
+#transitions p, #cards p{
+    margin-bottom: 10px;
+}
+#transitions #btn-container, #cards #card-container{
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 500px;
+}
+#transitions #btn-container div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: flex-end; */
+    padding: 10px;
+}
+#transitions #btn-container div button{
+    padding: 10px;
+    width: 100%;
+}
+#transitions #btn-container div:nth-child(1){
+background: darkmagenta;
+}
+#transitions #btn-container div:nth-child(2){
+    background: rgb(218, 106, 218);
+}
+#transitions #btn-container div:nth-child(3){
+    background: rgb(236, 156, 236);
+}
+/*boton 1*/
+#transitions #btn-container div:nth-child(1) button{
+    border-radius: 8px;
+    border: 2px rgb(160, 96, 160) solid;
+    background-color: rgb(160, 96, 160);
+    color: white;
+    transition: 0.4s ease-in;
+}
+    #transitions #btn-container div:nth-child(1) button:hover{
+    border-radius: 8px;
+    border: 2px rgb(160, 96, 160) solid;
+    background-color: rgb(218, 200, 218);
+    color: rgb(160, 96, 160) ;
+}
+/*boton 2*/
+#transitions #btn-container div:nth-child(2) button{
+    border-radius: 8px;
+    background-color: rgb(228, 89, 198);
+    color: white;
+    transition: 0.4s ease-in;
+}
+#transitions #btn-container div:nth-child(2) button:hover{
+    box-shadow: 0px 4px 8px rgb(192, 23, 79);
+}
+/*boton 3*/
+#transitions #btn-container div:nth-child(3) button{
+    border-radius: 8px;
+    background-color: rgb(80, 8, 80);
+    color: white;
+    
+    
+}
+#transitions #btn-container div:nth-child(3) button:hover{
+    animation-name: moveright;
+    animation-duration: 3s;
+}
+
+@keyframes moveright{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+/*Tarjetas*/
+#cards{
+    background: rgb(39, 116, 179);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cards #card-container .card1, #cards #card-container .card2{
+    background-color: rgb(139, 0, 93);
+    border-radius: 16px;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+
+}
+#cards #card-container .card1 .card-header{
+    background: plum;
+    height: 60px;
+    font-size: 14px;
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+#cards #card-container .card1 .card-header p{
+    margin: 0;
+}
+#cards #card-container .card1 .card-body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+#cards #card-container .card1 .card-body .user-info {
+    display: flex;
+    justify-content: space-between;
+}
+#cards #card-container .card1 .card-body .user-info div{
+    display: flex;
+    align-items: center;
+}
+#cards #card-container .card1 .card-body .user-info div img{
+    width: 30px ;
+    height: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#cards #card-container .card1 .card-body .user-info div p{
+    margin: 0;
+}
+#cards #card-container .card1 .card-body .card-btns{
+    display: flex;
+}
+#cards #card-container .card1 .card-body .card-btns button{
+    border-radius: 50px;
+    padding: 6px 20px;
+    background-color: white;
+}
+#cards #card-container .card1 .card-body .card-btns .main-btn{
+    margin-right: 10px;
+    background-color: turquoise;
+    color: white;
+}
+/*Card 2*/
+#cards #card-container .card2{
+    position: relative;
+
+}
+/*Formulario*/
+#form{
+    background: rgb(28, 210, 235);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+    /*
+.box{
+    background-color: blueviolet;
+    padding: 10px 20px 30px 0;
+    border: 3px black solid;
+    margin: 10px 80px 20px 40px;
+}
+.border{
+
+    border-bottom: 2px solid black;
+
+}
+#test{
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-style:inherit
+
+}
+.black{
+
+    color:black
+}
+#banner {
+    background-image: url(https://www.saborusa.com/wp-content/uploads/2019/10/Animate-a-disfrutar-una-deliciosa-pizza-de-salchicha-Foto-destacada.png);
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+*/
